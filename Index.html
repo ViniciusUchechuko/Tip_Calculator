@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora de Gorgetas</title>
+</head>
+<body>
+    <div id="container">
+        <div id="title">
+        <h1>Calculadora de gorgetas</h1>
+        </div>
+        <div>
+            <form class="tipsform">
+                <label for="bill">
+                <p>Quanto ficou a conta?</p>
+                </label>
+                <p>
+                R$<input type="number" placeholder="100" name="bill" id="bill" class="formInput"> 
+                </p>
+                <label for="serviceQual">
+                    Como foi seu serviço?
+                    <p>
+                        <select name="serviceQual" id="serviceQual" class="formSelect">
+                            <option disabled selected value="0">-- Escolha uma opção</option>
+                            <option value="0.3">30% - Incrível</option>
+                            <option value="0.2">20% - Bom</option>
+                            <option value="0.15">15% - Aceitavel</option>
+                            <option value="0.1">10% - Ruim</option>
+                            <option value="0.05">05% - Péssimo</option>
+                    </p>
+                    </select>
+                </label>
+                <label for="people">
+                    <p>Quantas pessoas vão dividir a conta?</p>
+                </label>
+                <p>
+                    <input type="number" placeholder="1" name="people" id="people" class="formInput"> Pessoa(s)
+                </p>
+                <input type="button" value="calcular" class="formButton" onclick="calc()">
+            </form>
+        </div>
+        <div id="resultado">
+
+        </div>
+    </div>  
+    <p id="copy">&copy; Vinicius Uchechukwu Jesus Onuorah</p>
+    <script src="script.js"></script> 
+</body>
+</html>
